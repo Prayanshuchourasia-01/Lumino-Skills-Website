@@ -21,6 +21,10 @@ const courseSchema = mongoose.Schema(
     tag:{
         type:'String',
         required:true
+    },
+    typeOfCourse:{
+        type:'String',
+        required:true
     }
 },
 {
