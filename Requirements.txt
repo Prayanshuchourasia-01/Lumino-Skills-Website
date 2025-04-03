@@ -4,3 +4,4 @@ MongoDb : For Database Management.
 ExpressJs : For Creating and Managing the Backend of the project.
 Front-End : React , Tailwind
 Back-End : MongoDb , mongooes , nodemon , express , node , axios , dotenv.
+Figma_Design_Url : 'https://www.figma.com/design/5m5K46Izu57Xo2phWOu54h/Personalized-Learning-Course-Suggester?node-id=0-1&t=nFulnI6Pj8WTUwY4-1'
