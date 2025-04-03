@@ -2,6 +2,5 @@ React : For the FrontEnd Development.
 NodeJS : For Running the server of the ExpressJs.
 MongoDb : For Database Management.
 ExpressJs : For Creating and Managing the Backend of the project.
-
-Front-End : 
+Front-End : React , Tailwind
 Back-End : MongoDb , mongooes , nodemon , express , node , axios , dotenv.
