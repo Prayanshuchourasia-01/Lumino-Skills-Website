@@ -11,6 +11,7 @@ const courseSchema = mongoose.Schema(
         type:'Number',
         required:true
         // can be zero 
+
     },
     description:{
         type:'String',
