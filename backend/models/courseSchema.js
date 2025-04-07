@@ -2,10 +2,10 @@ import mongoose from "mongoose";
 
 const courseSchema = mongoose.Schema(
     {
-    name:{
+    title:{
         type:'String',
         required:true
-        // name spelling limit can be 15 or 20 letter 
+        // title spelling limit can be 40-60 letter 
     },
     price:{
         type:'Number',
@@ -18,7 +18,13 @@ const courseSchema = mongoose.Schema(
         required:true
         // limit upto 200 letters 
     },
-    link:{
+
+    imageURL: {
+        type:'String',
+        required:true
+        // URL for course image
+    },
+    CourseLink:{
         type:'String',
         required:true
         // url of the course 
@@ -26,16 +32,22 @@ const courseSchema = mongoose.Schema(
     tag:{
         type:'String',
         required:true
+        //some of the Demo tags are : Python , Html , Css , Js , Java , C++ , Perl , ReactJs , NodeJs , ExpressJs , MongoDb .. etc 
         // tag are needed to filter out the courses to show the user
     },
     typeOfCourse:{
         type:'String',
         required:true
         // in these tell which type of course it is , either free or paid || beginner or intermediate or expert.
+    },
+    CourseLevel:{
+        type:"String",
+        required:true
+        // in This There will be 3 levels - Beginnners , intermidiate , expert 
     }
 },
 {
-    timestamp:true
+    timestamps:true
 }
 )
 
