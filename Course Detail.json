@@ -1,0 +1,25 @@
+[
+        {
+          "title": "100 Days of Code: The Complete Python Pro Bootcamp",
+          "price": "3299",
+          "description": "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps! Created By Dr. Angela Yu, Developer and Lead Instructor",
+          "imageURL": "https://i.ytimg.com/vi/lD1lk8YRXpw/maxresdefault.jpg",
+          "CourseLink": "https://www.udemy.com/course/100-days-of-code/",
+          "tag": "Python",
+          "typeOfCourse":"PAID",
+          "CourseLevel":"Beginner"
+        },
+
+        {
+          "title" : "Complete web development course",
+          "price": "3099",
+          "description": "Only web development course that you will need. Covers HTML, CSS, Tailwind, Node, React, MongoDB, Prisma, Deployment etc",
+          "CourseLink": "https://www.udemy.com/course/web-dev-master/",
+          "imageURL": "https://img-c.udemycdn.com/course/750x422/6035102_7d1a.jpg",
+          "tag": "Web Development ",
+          "typeOfCourse":"PAID",
+          "CourseLevel":"Beginner"
+        }
+    
+    
+]
