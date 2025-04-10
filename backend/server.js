@@ -26,23 +26,60 @@ app.get('/', (req, res) => {
 // Posting Course Data in the Database From This route 
 app.post('/uploadCourse',async(req,res)=>{
     try {
-        const course  = await Course.create(req.body)
+        const course  = await Course.create(req.body);
         res.status(200).json(course);
+        console.log("Course is uploaded");
 
     } catch (error) {
         console.log(error.message);
-        res.status(500).json({message: error.message})
+        res.status(500).json({message: error.message});
     }
 })
 
 
 // Update the data from the database by filtering out id of the course from this route.
-// Adding soon 
 
 
+app.put('/updateCourseDetail/:id',async(req,res)=>{
+    try {
+        const courseId = req.params.id;
+        const course = await Course.findByIdAndUpdate(courseId, req.body);
+
+        // console.log(courseId);
+        
+        // cant find the course in database
+        if(!course){
+            return res.status(404).json({message:`can't find any course with ${courseId}`})
+        }
+        const updatedDetails = await Course.findById(courseId);
+        res.status(200).json(updatedDetails);
+        console.log("Course is Updated");
+
+    } catch (error) {
+        res.status(500).json({message:error.message});
+    }
+})
 
 // Delete the data from the database by filtering out id of the course from this route. 
-// Adding soon 
+
+app.delete('/deleteCourse/:id',async(req,res)=>{
+   try {
+
+    const courseId = req.params.id ;
+    // console.log(couresId);
+    const course =  await Course.findByIdAndDelete(courseId);
+    if(!course){
+        res.status(404).json({message:`course not found of this id : ${courseId}`})
+    }
+    res.status(200).json(course)
+    console.log("Course is Deleted");
+    
+   } catch (error) {
+    res.status(500).json({message:error.message});
+   }
+
+
+})
 
 
 
@@ -70,7 +107,7 @@ app.get('/Courses/:tag',async(req, res)=>{
     }
 })
 
-
+ 
 
 // console.log("Here is it ")
 
