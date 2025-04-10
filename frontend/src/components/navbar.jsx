@@ -5,8 +5,8 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "Free Course", href: "/freeCourse" },
   { name: "Paid Course", href: "/paidCourse" },
-  { name: "Categories", href: "/categories" },
-  { name: "Contact", href: "/contact" },
+  // { name: "Categories", href: "/categories" },
+  // { name: "Contact", href: "/contact" },
 ]
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,10 +17,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="text-2xl font-bold text-white font-[Plus Jakarta Sans]">Lumino Skills</div>
+          <div className="text-2xl font-bold [word-spacing:0.3rem] tracking-[2.5px] text-white font-customFont">LUMINO SKILLS</div>
 
           {/* Desktop links */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex space-x-10">
             {navLinks.map((link) => (
               <a
                 key={link.name}
