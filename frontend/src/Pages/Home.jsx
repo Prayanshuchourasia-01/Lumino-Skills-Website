@@ -16,7 +16,7 @@ export default function Home() {
     <PopularCourse/>
     <Footer/>    
 
- 
+
     </div>
 
     
