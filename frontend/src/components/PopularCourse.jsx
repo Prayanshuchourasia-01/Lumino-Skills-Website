@@ -6,7 +6,7 @@ export default function PopularCourse() {
    
         
     <div className="bg-black min-h-screen flex flex-col items-center py-10">
-      <h2 className="text-white text-2xl font-semibold mb-10">POPULAR COURSES</h2>
+      <h2 className="text-3xl text-white font-bold text-center mb-10">🔥 Explore Our Courses</h2>
       <div className="flex flex-wrap justify-center gap-8 mb-10">
         <CourseCard />
         <CourseCard />

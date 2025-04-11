@@ -3,8 +3,8 @@ import { FaTwitter, FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-white text-black border-t mt-10 max-w-full 2xl:m-[40px] xl:m-7 lg:m-5 md:m-3 sm:m-6 mb-0">
-    <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <footer className="bg-white text-black  max-w-full 2xl:m-[20px] xl:ml-7  xl:mr-7 xl:mt-7 lg:m-5 md:m-3 sm:m-6 mb-0">
+    <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-2">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
         <div className="mb-10 md:mb-0">
           <h2 className="text-3xl font-bold mb-2 font-customFont">
@@ -65,7 +65,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <p className='pt-8'>Copyright © 2025 Lumino Skills. Licensed under the MIT License. All rights reserved.</p>
+      <p className='pt-8'>Copyright © 2025 Lumino Skills. Licensed under the MIT License. All rights reserved. <strong>Developed By Prayanshu Chourasia</strong></p>
     </div>
   </footer>
   )
