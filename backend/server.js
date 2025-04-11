@@ -13,7 +13,6 @@ const DbUrl = process.env.MONGO_DB_URL; /* Mongo Db connection Url here */
 app.use(express.json());
 
 
-
                                             /* Routes defined here */
 
 
@@ -21,6 +20,30 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send('<h1>Hello, Express.js Server!</h1>');
 }); 
+
+// Fetching All Courses From database by this Route 
+app.get('/allCourses',async(req, res)=>{
+    try {
+
+        const Allcourses = await Course.find({});
+        res.status(200).json(Allcourses);
+
+    } catch (error) {
+        res.status(500).json({message:error.message});
+    }
+})
+
+// Fetching Tag Based Courses And Filtering out from all the courses given in the database. 
+app.get('/Courses/:tag',async(req, res)=>{
+    try {
+        const tagName = req.params.tag ; 
+        const course = await Course.find({tag: { $in: [tagName] }})    
+        res.status(200).json(course);
+
+    } catch (error) {
+        res.status(500).json({message:error.message});
+    }
+})
 
 
 // Posting Course Data in the Database From This route 
@@ -36,9 +59,7 @@ app.post('/uploadCourse',async(req,res)=>{
     }
 })
 
-
 // Update the data from the database by filtering out id of the course from this route.
-
 
 app.put('/updateCourseDetail/:id',async(req,res)=>{
     try {
@@ -77,39 +98,9 @@ app.delete('/deleteCourse/:id',async(req,res)=>{
    } catch (error) {
     res.status(500).json({message:error.message});
    }
-
-
 })
 
 
-
-// Fetching All Courses From database by this Route 
-app.get('/allCourses',async(req, res)=>{
-    try {
-
-        const Allcourses = await Course.find({});
-        res.status(200).json(Allcourses);
-
-    } catch (error) {
-        res.status(500).json({message:error.message});
-    }
-})
-
-// Fetching Tag Based Courses And Filtering out from all the courses given in the database. 
-app.get('/Courses/:tag',async(req, res)=>{
-    try {
-        const tagName = req.params.tag ; 
-        const course = await Course.find({tag: { $in: [tagName] }})    
-        res.status(200).json(course);
-
-    } catch (error) {
-        res.status(500).json({message:error.message});
-    }
-})
-
- 
-
-// console.log("Here is it ")
 
 
 
