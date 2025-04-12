@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import Course from "./models/courseSchema.js";
+import cors from 'cors';
 dotenv.config();
 
 
@@ -11,7 +12,7 @@ const port = process.env.PORT || 4000 ; /* Express Server Port Number  */
 const DbUrl = process.env.MONGO_DB_URL; /* Mongo Db connection Url here */
 
 app.use(express.json());
-
+app.use(cors());
 
                                             /* Routes defined here */
 
@@ -20,6 +21,31 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send('<h1>Hello, Express.js Server!</h1>');
 }); 
+
+// FREE Courses Route
+app.get('/freeCourse',async(req,res)=>{
+    try {
+        const freeCourse = await Course.find({typeOfCourse: { $in: 'FREE' }})
+        console.log(freeCourse);
+        res.status(200).json(freeCourse)
+    } catch (error) {
+        res.status(500).json({message:error.message})
+    }
+}
+)
+
+// PAID Courses Route
+app.get('/paidCourse',async(req,res)=>{
+    try {
+        const paidCourse = await Course.find({typeOfCourse: { $in: 'PAID' }})
+        console.log(paidCourse);
+        res.status(200).json(paidCourse);
+
+    } catch (error) {
+        res.status(500).json({message:error.message})
+    }
+}
+)
 
 // Fetching All Courses From database by this Route 
 app.get('/allCourses',async(req, res)=>{
