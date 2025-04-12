@@ -13,6 +13,7 @@ import ContactPage from './Pages/ContactPage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
+  
   <Routes>
     <Route path='/' element={<Home/>} />
     <Route path='/freeCourse' element={<Free_Course_Page/>} />
@@ -20,7 +21,7 @@ root.render(
     <Route path='/categories' element={<Categories_Page/>} />
     <Route path='/contact' element={<ContactPage/>} />
   </Routes>
-    <App />
+   
   </BrowserRouter>
 );
 

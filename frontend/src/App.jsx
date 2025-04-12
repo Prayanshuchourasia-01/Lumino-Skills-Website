@@ -32,6 +32,7 @@ const selectedCourse = {
 function App() {
   return (
     <>
+    {/* <CourseView/> */}
 
 {/* <Home/> */}
 
