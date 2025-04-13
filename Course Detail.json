@@ -19,7 +19,160 @@
           "tag": "Web Development",  
           "typeOfCourse":"PAID",
           "CourseLevel":"Beginner"
-        }
+        },
+        {
+          "title" : "Frontend Domination - create Anything with code",
+          "price": "3999",
+          "description": "Domin8 the web game with 'Front-End Domination.'! Nail HTML, CSS, JS, and Solve real problems, dive into fun projects, and be interview-ready!",
+          "CourseLink": "https://www.sheryians.com/courses/courses-details/Front-End%20Domination:%20Create%20Anything%20with%20Code",
+          "imageURL": "https://ik.imagekit.io/sheryians/courses_gif/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.jpg",
+          "tag": "Web Development",  
+          "typeOfCourse":"PAID",
+          "CourseLevel":"Beginner"
+        },
+        {
+          "title" : "Backend Domination - Create Scalable & Secured Backend.",
+          "price": "3999",
+          "description": "Ready to rule the digital world? Learn to build powerful back-ends that drive websites and apps smoothly. From databases to security, we cover it all.",
+          "CourseLink": "https://www.sheryians.com/courses/courses-details/Back-End%20Domination:%20Create%20Efficient%20Back-End.",
+          "imageURL": "https://ik.imagekit.io/sheryians/courses_gif/undefined-backend_0.5x_Medium_wgHDU-5rPt.png",
+          "tag": "Web Development",  
+          "typeOfCourse":"PAID",
+          "CourseLevel":"Beginner"
+        },
+        
+        {
+          "title" : "Java & DSA Domination : Crack MAANG Companies.",
+          "price": "4999",
+          "description": "Ace your coding interviews! Master Java and DSA with our expert-led course, packed with interactive lessons and practice tests.",
+          "CourseLink": "https://www.sheryians.com/courses/courses-details/Java%20&%20DSA%20Domination",
+          "imageURL": "https://ik.imagekit.io/sheryians/java&dsa/javaas%20Large_jY0Wighav.jpeg",
+          "tag": "Java",  
+          "typeOfCourse":"PAID",
+          "CourseLevel":"Beginner"
+        },
+        
+        {
+          "title" : "Job Ready AI Powered Cohort: Complete Web Development + DSA + Aptitude",
+          "price": "5999",
+          "description": "MERN Stack, A Placement Focus, DSA With JS, Aptitude Focus, Ai Powered",
+          "CourseLink": "https://www.sheryians.com/courses/courses-details/Java%20&%20DSA%20Domination",
+          "imageURL": "https://ik.imagekit.io/sheryians/Job%20Ready%20Live%20Batch/IMG_5100_G2afyBQKH.JPG?updatedAt=1735827470404",
+          "tag": "Web Development",  
+          "typeOfCourse":"PAID",
+          "CourseLevel":"Beginner"
+        },
+
+                                    
+     
+
+        {
+          "title" : "C++ Tutorial for Complete Beginners",
+          "price": "0",
+          "description": "How to program in the popular (and tricky!) C++ programming language, for complete beginners.",
+          "CourseLink": "https://www.udemy.com/course/free-learn-c-tutorial-beginners/",
+          "imageURL": "data:image/jpeg;base64,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",
+          "tag": "C++",  
+          "typeOfCourse":"FREE",
+          "CourseLevel":"Beginner"
+        },
+        {
+          "title" : "A Rapid Course in C++ Programming",
+          "price": "0",
+          "description": "A Rapid Course on C++",
+          "CourseLink": "https://www.udemy.com/course/learn-c-in-50-minutes/",
+          "imageURL": "https://img-c.udemycdn.com/course/750x422/5741032_88bf_4.jpg",
+          "tag": "C++",  
+          "typeOfCourse":"FREE",
+          "CourseLevel":"Beginner"
+        },
+        
+        {
+          "title" : "Learn JAVA Programming - Beginner to Master",
+          "price": "549",
+          "description": "Deep Dive in Core Java programming -Standard Edition. A Practical approach to learn Java. Become a Java Expert",
+          "CourseLink": "https://www.udemy.com/course/java-se-programming/?couponCode=JUST4U02223",
+          "imageURL": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-5miWG6HjJvZJ65Qkx5AvA.jpeg",
+          "tag": "Java",  
+          "typeOfCourse":"PAID",
+          "CourseLevel":"Beginner"
+        },
+        
+
+        {
+          "title" : "Complete Java Programming Tutorial: From Beginner to Advance",
+          "price": "0",
+          "description": "Your Complete Guide to Java: Object-Oriented Programming and More!",
+          "CourseLink": "https://www.udemy.com/course/complete-java-programming-tutorial-from-beginner-to-advance/",
+          "imageURL": "https://relecura.ai/wp-content/uploads/2024/05/Blog-post-Images-23.png",
+          "tag": "Java",  
+          "typeOfCourse":"FREE",
+          "CourseLevel":"Beginner"
+        },
+        
+        {
+          "title" : "The Complete Full-Stack Web Development Bootcamp",
+          "price": "519",
+          "description": "Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps",
+          "CourseLink": "https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=JUST4U02223",
+          "imageURL": "https://img-c.udemycdn.com/course/750x422/1565838_e54e_18.jpg",
+          "tag": "Web Development",  
+          "typeOfCourse":"PAID",
+          "CourseLevel":"Beginner"
+        },
+        
+        {
+          "title" : "Foundations of Front-End Web Development",
+          "price": "0",
+          "description": "Learn the skills to quickly start a career in Front-End Development today!",
+          "CourseLink": "https://www.udemy.com/course/foundations-of-front-end-development/",
+          "imageURL": "https://blog.unifiedmentor.com/wp-content/uploads/2024/04/Front-End-Web-Developer.webp",
+          "tag": "Web Development",  
+          "typeOfCourse":"FREE",
+          "CourseLevel":"Beginner"
+        },
+        
+        
+
+
+
+
+
+
+
+     /* Till Here Uploaded to the Database*/
+
+
+
+
+
+
+
+
+
+        
+        {
+          "title" : "Job Ready AI Powered Cohort: Complete Web Development + DSA + Aptitude",
+          "price": "5999",
+          "description": "MERN Stack, A Placement Focus, DSA With JS, Aptitude Focus, Ai Powered",
+          "CourseLink": "https://www.sheryians.com/courses/courses-details/Java%20&%20DSA%20Domination",
+          "imageURL": "https://ik.imagekit.io/sheryians/Job%20Ready%20Live%20Batch/IMG_5100_G2afyBQKH.JPG?updatedAt=1735827470404",
+          "tag": "Web Development",  
+          "typeOfCourse":"PAID",
+          "CourseLevel":"Beginner"
+        },
+        
+        {
+          "title" : "Job Ready AI Powered Cohort: Complete Web Development + DSA + Aptitude",
+          "price": "5999",
+          "description": "MERN Stack, A Placement Focus, DSA With JS, Aptitude Focus, Ai Powered",
+          "CourseLink": "https://www.sheryians.com/courses/courses-details/Java%20&%20DSA%20Domination",
+          "imageURL": "https://ik.imagekit.io/sheryians/Job%20Ready%20Live%20Batch/IMG_5100_G2afyBQKH.JPG?updatedAt=1735827470404",
+          "tag": "Web Development",  
+          "typeOfCourse":"PAID",
+          "CourseLevel":"Beginner"
+        },
+        
     
     
 ]
