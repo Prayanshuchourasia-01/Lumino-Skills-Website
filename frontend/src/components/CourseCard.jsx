@@ -1,10 +1,12 @@
 import React, { useState } from "react"
+import { Link } from 'react-router'
 
 
 export default function CourseCard(props) {
     // const isPaid = course.typeOfCourse;
-    console.log({props})
+    // console.log({props})
     let {course} = props;
+    console.log(course)
   return (
     
     <div className="bg-white text-black mt-8 mb-8 p-6 rounded-lg shadow-md border-2 flex flex-col justify-between w-[350px]">
@@ -34,7 +36,7 @@ export default function CourseCard(props) {
       {/* Footer Buttons */}
       <div className="mt-6 flex items-center justify-between">
         <button className="bg-gray-200 text-black text-sm font-medium px-4 py-1.5 rounded-full hover:bg-gray-300 transition">
-          View
+           <Link to={`/CourseDetail/${course._id}`}>View</Link>
         </button>
         
       </div>

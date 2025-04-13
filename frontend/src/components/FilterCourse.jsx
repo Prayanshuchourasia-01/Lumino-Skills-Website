@@ -7,8 +7,7 @@ const upcoming = ['DevOps (Upcoming)', 'Artificial Intelligence (Upcoming)', 'Ma
 const FilterCourse = () => {
   const [selected, setSelected] = useState({
     skills: [],
-    levels: [],
-    upcoming: [],
+    levels: [] 
   });
 
   const handleChange = (category, value) => {
