@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 app.get('/freeCourse',async(req,res)=>{
     try {
         const freeCourse = await Course.find({typeOfCourse: { $in: 'FREE' }})
-        console.log(freeCourse);
+        // console.log(freeCourse);
         res.status(200).json(freeCourse)
     } catch (error) {
         res.status(500).json({message:error.message})
@@ -38,7 +38,7 @@ app.get('/freeCourse',async(req,res)=>{
 app.get('/paidCourse',async(req,res)=>{
     try {
         const paidCourse = await Course.find({typeOfCourse: { $in: 'PAID' }})
-        console.log(paidCourse);
+        // console.log(paidCourse);
         res.status(200).json(paidCourse);
 
     } catch (error) {
@@ -59,11 +59,37 @@ app.get('/allCourses',async(req, res)=>{
     }
 })
 
+// Route for Categories Page
+app.post('/categories',async(req, res)=>{
+    try {
+
+        const Categories = await Course.find({});
+        res.status(200).json(Categories);
+
+    } catch (error) {
+        res.status(500).json({message:error.message});
+    }
+})
+
 // Fetching Tag Based Courses And Filtering out from all the courses given in the database. 
+
 app.get('/Courses/:tag',async(req, res)=>{
     try {
         const tagName = req.params.tag ; 
         const course = await Course.find({tag: { $in: [tagName] }})    
+        res.status(200).json(course);
+
+    } catch (error) {
+        res.status(500).json({message:error.message});
+    }
+})
+
+// Fetching ID Based Courses And Filtering out from all the courses given in the database. 
+
+app.get('/CourseDetail/:_id',async(req, res)=>{
+    try {
+        const ID = req.params._id ; 
+        const course = await Course.findById(ID)
         res.status(200).json(course);
 
     } catch (error) {
@@ -125,9 +151,6 @@ app.delete('/deleteCourse/:id',async(req,res)=>{
     res.status(500).json({message:error.message});
    }
 })
-
-
-
 
 
                                 /* Server and MongoDb Connection Establishment here */
