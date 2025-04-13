@@ -26,7 +26,7 @@ const Paid_Course_Page = () => {
     const getPaidCourse = async () => {
       try {
         const res = await axios.get("http://localhost:3700/paidCourse");
-        setCourses(res.data);
+        setCourses(res.data); 
       } catch (error) {
         console.log(error);
       }
