@@ -4,7 +4,8 @@ import Footer from "../components/Footer";
 import FilterCourse from "../components/FilterCourse";
 import axios from "axios";
 import CourseCard from "../components/CourseCard";
-
+import Categories_Display from '../components/CategoriesDisplay';
+import { ScrollToTop } from "../components/ScrollToTop";
 
 // const selectedCourse = {
 //   title: "Complete web development course",
@@ -36,9 +37,11 @@ const Paid_Course_Page = () => {
 
   return (
     <div>
-
+      <ScrollToTop/>
       <Navbar />
-      <FilterCourse />
+      {/* <FilterCourse /> */}
+      <Categories_Display/>
+      
       <div className="h-fit justify-items-center  bg-slate-300 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
        
         {Courses.map((course) => {

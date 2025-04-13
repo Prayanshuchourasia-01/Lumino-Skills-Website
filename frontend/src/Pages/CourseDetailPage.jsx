@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import CourseDetail from '../components/CourseDetail'
 import { useParams } from 'react-router'
 import axios from 'axios'
+import { ScrollToTop } from '../components/ScrollToTop'
 
 
 const CourseDetailPage = () => {
@@ -26,6 +27,7 @@ const CourseDetailPage = () => {
 
   return (
     <div>
+      <ScrollToTop/>
       <Navbar/>
 
 <CourseDetail course={filteredCourse}/>

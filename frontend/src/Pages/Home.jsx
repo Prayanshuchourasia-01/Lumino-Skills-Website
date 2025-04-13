@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import FeatureSection from '../components/FeatureSection'
 import CourseView from '../components/CourseView'
 import CourseDetail from '../components/CourseDetail'
+import { ScrollToTop } from '../components/ScrollToTop'
 
 const selectedCourse = {
   title: "Complete web development course",
@@ -23,6 +24,8 @@ export default function Home() {
   return (
     <div className='w-full'>
 
+    <ScrollToTop/>
+    
     <Navbar/>
     <HeroSection/>
     <FeatureSection/>
