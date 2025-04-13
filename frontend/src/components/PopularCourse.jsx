@@ -30,6 +30,48 @@ const selectedCourse = [
       "createdAt": "2025-04-10T05:32:22.304Z",
       "updatedAt": "2025-04-10T05:32:22.304Z",
       "__v": 0
+  },
+  {
+    "title" : "Frontend Domination - create Anything with code",
+    "price": "3999",
+    "description": "Domin8 the web game with 'Front-End Domination.'! Nail HTML, CSS, JS, and Solve real problems, dive into fun projects, and be interview-ready!",
+    "CourseLink": "https://www.sheryians.com/courses/courses-details/Front-End%20Domination:%20Create%20Anything%20with%20Code",
+    "imageURL": "https://ik.imagekit.io/sheryians/courses_gif/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.jpg",
+    "tag": "Web Development",  
+    "typeOfCourse":"PAID",
+    "CourseLevel":"Beginner"
+  },
+  {
+    "title" : "Backend Domination - Create Scalable & Secured Backend.",
+    "price": "3999",
+    "description": "Ready to rule the digital world? Learn to build powerful back-ends that drive websites and apps smoothly. From databases to security, we cover it all.",
+    "CourseLink": "https://www.sheryians.com/courses/courses-details/Back-End%20Domination:%20Create%20Efficient%20Back-End.",
+    "imageURL": "https://ik.imagekit.io/sheryians/courses_gif/undefined-backend_0.5x_Medium_wgHDU-5rPt.png",
+    "tag": "Web Development",  
+    "typeOfCourse":"PAID",
+    "CourseLevel":"Beginner"
+  },
+  
+  {
+    "title" : "Java & DSA Domination : Crack MAANG Companies.",
+    "price": "4999",
+    "description": "Ace your coding interviews! Master Java and DSA with our expert-led course, packed with interactive lessons and practice tests.",
+    "CourseLink": "https://www.sheryians.com/courses/courses-details/Java%20&%20DSA%20Domination",
+    "imageURL": "https://ik.imagekit.io/sheryians/java&dsa/javaas%20Large_jY0Wighav.jpeg",
+    "tag": "Java",  
+    "typeOfCourse":"PAID",
+    "CourseLevel":"Beginner"
+  },
+  
+  {
+    "title" : "Job Ready AI Powered Cohort: Complete Web Development + DSA + Aptitude",
+    "price": "5999",
+    "description": "MERN Stack, A Placement Focus, DSA With JS, Aptitude Focus, Ai Powered",
+    "CourseLink": "https://www.sheryians.com/courses/courses-details/Java%20&%20DSA%20Domination",
+    "imageURL": "https://ik.imagekit.io/sheryians/Job%20Ready%20Live%20Batch/IMG_5100_G2afyBQKH.JPG?updatedAt=1735827470404",
+    "tag": "Web Development",  
+    "typeOfCourse":"PAID",
+    "CourseLevel":"Beginner"
   }
 ]
 export default function PopularCourse() {
@@ -46,12 +88,7 @@ export default function PopularCourse() {
         {selectedCourse.map((course)=>{
           return <CourseCard course={course}/>
         })}
-        {selectedCourse.map((course)=>{
-          return <CourseCard course={course}/>
-        })}
-        {selectedCourse.map((course)=>{
-          return <CourseCard course={course}/>
-        })}
+        
        
       </div>
       <button className="bg-gray-300 text-black font-semibold px-6 py-2 rounded-md">
