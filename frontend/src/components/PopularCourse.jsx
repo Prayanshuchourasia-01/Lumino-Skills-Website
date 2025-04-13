@@ -75,7 +75,7 @@ const selectedCourse = [
   }
 ]
 export default function PopularCourse() {
-  const [popCourse,setPopCourse]=useState([]);
+  // const [popCourse,setPopCourse]=useState([]);
   
   return (
     

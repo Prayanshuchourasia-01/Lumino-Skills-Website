@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaTwitter, FaFacebookF, FaInstagram, FaGithub } from "react-icons/fa";
+import { Link } from 'react-router';
 
 function Footer() {
   return (
@@ -41,10 +42,10 @@ function Footer() {
         <div>
           <h3 className="font-bold mb-5">Quick Links</h3>
           <ul className="space-y-3 text-gray-600">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Free Course</a></li>
-            <li><a href="#">Paid Course</a></li>
-            <li><a href="#">Category</a></li>
+            <li><Link to={'/'}>Home</Link></li>
+            <li><Link to={'/freeCourse'}>Free Course</Link></li>
+            <li><Link to={'/paidCourse'}>Paid Course</Link></li>
+            <li><Link to={'/categories'}>Category</Link></li>
           </ul>
         </div>
 

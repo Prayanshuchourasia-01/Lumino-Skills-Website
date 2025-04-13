@@ -15,26 +15,26 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-6 text-sm items-center mr-9">
 
           <li className="cursor-pointer hover:text-blue-500">
-            <Link to={'/'}>Home</Link>
+            <Link to={'/'} refresh="true">Home</Link>
              </li>
 
           <li className="cursor-pointer hover:text-blue-500">
-            <Link to={'/freeCourse'}>Free Course</Link>
+            <Link to={'/freeCourse'}refresh="true">Free Course</Link>
           </li>
 
           <li className="cursor-pointer hover:text-blue-500">
-            <Link to={'/paidCourse'}>Paid Course</Link>
+            <Link to={'/paidCourse'} refresh="true">Paid Course</Link>
           </li>
 
           <li className="text-gray-500 select-none">|</li>
 
           <li className="cursor-pointer hover:text-blue-500">
-            <Link to={'/categories'}>Categories</Link>
+            <Link to={'/categories'} refresh="true">Categories</Link>
           </li>
 
         {/* Contact Button */}
         <button className="hidden md:block bg-white text-black px-4 py-2 rounded-lg shadow">
-          <Link to={'/contact'}>Contact</Link>
+          <Link to={'/contact'} refresh="true">Contact</Link>
         </button>
 
 

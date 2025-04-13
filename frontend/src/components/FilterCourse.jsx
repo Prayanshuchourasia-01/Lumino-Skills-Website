@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const skills = ['Python', 'Web Development', 'C++', 'Java', 'C', 'Cloud Computing', 'Android dev', 'BlockChain', 'HTML', 'CSS'];
+const skills = ['Python', 'Web Development', 'C++', 'Java', 'C', 'Cloud Computing', 'Android dev', 'BlockChain'];
 const levels = ['Beginners', 'Intermediate', 'Expert'];
 const upcoming = ['DevOps (Upcoming)', 'Artificial Intelligence (Upcoming)', 'Machine Learning (Upcoming)'];
 
