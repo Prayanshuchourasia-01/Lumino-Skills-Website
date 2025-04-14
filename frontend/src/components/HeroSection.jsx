@@ -1,5 +1,6 @@
 import React from "react";
 import HeroSectionImg from '../images/heroSectionImg.jpg'
+import { Link } from 'react-router'
 
 export default function HeroSection() {
   return (
@@ -11,10 +12,10 @@ export default function HeroSection() {
         </h1>
         <div className="flex gap-6 pt-[70px] ml-8">
           <button className="bg-white text-black px-6 py-2 rounded-md font-semibold">
-            Choice Now
+          <Link to={'/categories'}>Choice Now</Link>
           </button>
           <button className="bg-white text-black px-6 py-2 rounded-md font-semibold flex items-center gap-2">
-            <span>⬇</span> Give Feedback
+            <span>⬇</span> <Link to={'/contact'}>Contact Us</Link>
           </button>
         </div>
       </div>
