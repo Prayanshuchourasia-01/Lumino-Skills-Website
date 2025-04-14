@@ -1,6 +1,48 @@
-import React from 'react'
+import React, { use, useState, useSyncExternalStore } from 'react'
+
+import axios from 'axios';
 
 export default function ContactComponent() {
+
+  const [name,setName] = useState('');
+  const [email,setEmail] = useState('');
+  const [phoneNumber,SetPhoneNumber] = useState('');
+
+  const handleSubmit = async(e) =>{
+    e.preventDefault();
+
+    // My EmailJs service ID , templete ID , Public key 
+    const serviceId = 'service_mra42yg';
+    const templateId = 'template_w87iq7u';
+    const publicKey = 'wdo_OkzIJWHlq3FZt';
+
+  // create an object with emailjs service ID , template id , public key and template params 
+  const data = {
+    service_id: serviceId,
+    template_id : templateId,
+    user_id: publicKey,
+    template_params:{
+      from_name : name,
+      from_email : email,
+      to_name : "master",
+      from_phoneNumber : phoneNumber
+    }
+  };
+
+  // send the email using EmailJS 
+  try {
+    const res = await axios.post('https://api.emailjs.com/api/v1.0/email/send',data)
+      console.log(res.data);
+      setName('');
+      setEmail('');
+      SetPhoneNumber('');
+  alert("You Form Got Submitted");
+  } catch (error) {
+    console.error(error);
+  }
+
+
+  }
   return (
     <>
     <div className="relative flex items-top justify-center mx-6 my-20 bg-white dark:bg-gray-900 sm:items-center sm:pt-0">
@@ -80,21 +122,23 @@ export default function ContactComponent() {
                   />
                 </svg>
                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                  info@acme.org
+                  info@luminoSkill.org
                 </div>
               </div>
             </div>
-            <form className="p-6 flex flex-col justify-center">
+            <form className="p-6 flex flex-col justify-center" onSubmit={handleSubmit}>
               <div className="flex flex-col">
                 <label htmlFor="name" className="hidden">
                   Full Name
                 </label>
                 <input
-                  type="name"
+                  type="text"
                   name="name"
                   id="name"
+                  value={name}
                   placeholder="Full Name"
-                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-white font-semibold focus:border-indigo-500 focus:outline-none"
+                  onChange={(e)=> setName(e.target.value)}
                 />
               </div>
               <div className="flex flex-col mt-2">
@@ -102,11 +146,13 @@ export default function ContactComponent() {
                   Email
                 </label>
                 <input
+                value={email}
                   type="email"
                   name="email"
                   id="email"
                   placeholder="Email"
-                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-white font-semibold focus:border-indigo-500 focus:outline-none"
+                  onChange={(e)=> setEmail(e.target.value)}
                 />
               </div>
               <div className="flex flex-col mt-2">
@@ -114,11 +160,13 @@ export default function ContactComponent() {
                   Number
                 </label>
                 <input
-                  type="tel"
+                value={phoneNumber}
+                  type="number"
                   name="tel"
                   id="tel"
                   placeholder="Telephone Number"
-                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                  className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-white font-semibold focus:border-indigo-500 focus:outline-none"
+                  onChange={(e)=> SetPhoneNumber(e.target.value)}
                 />
               </div>
               <button
@@ -135,6 +183,43 @@ export default function ContactComponent() {
     
     
     
+
         </>
   )
 }
+
+// import React, { useState } from 'react';
+// import { useForm, ValidationError } from '@formspree/react';
+
+// export default function ContactComponent() {
+//   const [state, handleSubmit] = useForm("mzzeoqby");
+
+//   if (state.succeeded) {
+//     return <p>Thanks for reaching out!</p>;
+//   }
+
+//   return (
+//     <form onSubmit={handleSubmit} className="max-w-md mx-auto p-4 bg-white rounded shadow space-y-4">
+//       <label htmlFor="email" className="block font-medium">Email Address</label>
+//       <input
+//         id="email"
+//         type="email"
+//         name="email"
+//         className="w-full p-2 border rounded"
+//       />
+//       <ValidationError prefix="Email" field="email" errors={state.errors} />
+
+//       <label htmlFor="message" className="block font-medium">Your Message</label>
+//       <textarea
+//         id="message"
+//         name="message"
+//         className="w-full p-2 border rounded"
+//       />
+//       <ValidationError prefix="Message" field="message" errors={state.errors} />
+
+//       <button type="submit" disabled={state.submitting} className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+//         Submit
+//       </button>
+//     </form>
+//   );
+// }
