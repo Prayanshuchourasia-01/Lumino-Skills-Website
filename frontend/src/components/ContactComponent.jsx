@@ -187,39 +187,3 @@ export default function ContactComponent() {
         </>
   )
 }
-
-// import React, { useState } from 'react';
-// import { useForm, ValidationError } from '@formspree/react';
-
-// export default function ContactComponent() {
-//   const [state, handleSubmit] = useForm("mzzeoqby");
-
-//   if (state.succeeded) {
-//     return <p>Thanks for reaching out!</p>;
-//   }
-
-//   return (
-//     <form onSubmit={handleSubmit} className="max-w-md mx-auto p-4 bg-white rounded shadow space-y-4">
-//       <label htmlFor="email" className="block font-medium">Email Address</label>
-//       <input
-//         id="email"
-//         type="email"
-//         name="email"
-//         className="w-full p-2 border rounded"
-//       />
-//       <ValidationError prefix="Email" field="email" errors={state.errors} />
-
-//       <label htmlFor="message" className="block font-medium">Your Message</label>
-//       <textarea
-//         id="message"
-//         name="message"
-//         className="w-full p-2 border rounded"
-//       />
-//       <ValidationError prefix="Message" field="message" errors={state.errors} />
-
-//       <button type="submit" disabled={state.submitting} className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-//         Submit
-//       </button>
-//     </form>
-//   );
-// }
