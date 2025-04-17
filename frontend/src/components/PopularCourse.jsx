@@ -32,47 +32,63 @@ const selectedCourse = [
       "__v": 0
   },
   {
-    "title" : "Frontend Domination - create Anything with code",
-    "price": "3999",
+    "_id": "67fbc03caf81fd9bd0ef93f9",
+    "title": "Frontend Domination - create Anything with code",
+    "price": 3999,
     "description": "Domin8 the web game with 'Front-End Domination.'! Nail HTML, CSS, JS, and Solve real problems, dive into fun projects, and be interview-ready!",
-    "CourseLink": "https://www.sheryians.com/courses/courses-details/Front-End%20Domination:%20Create%20Anything%20with%20Code",
     "imageURL": "https://ik.imagekit.io/sheryians/courses_gif/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.jpg",
-    "tag": "Web Development",  
-    "typeOfCourse":"PAID",
-    "CourseLevel":"Beginner"
-  },
-  {
-    "title" : "Backend Domination - Create Scalable & Secured Backend.",
-    "price": "3999",
-    "description": "Ready to rule the digital world? Learn to build powerful back-ends that drive websites and apps smoothly. From databases to security, we cover it all.",
-    "CourseLink": "https://www.sheryians.com/courses/courses-details/Back-End%20Domination:%20Create%20Efficient%20Back-End.",
-    "imageURL": "https://ik.imagekit.io/sheryians/courses_gif/undefined-backend_0.5x_Medium_wgHDU-5rPt.png",
-    "tag": "Web Development",  
-    "typeOfCourse":"PAID",
-    "CourseLevel":"Beginner"
-  },
+    "CourseLink": "https://www.sheryians.com/courses/courses-details/Front-End%20Domination:%20Create%20Anything%20with%20Code",
+    "tag": "Web Development",
+    "typeOfCourse": "PAID",
+    "CourseLevel": "Beginner",
+    "createdAt": "2025-04-13T13:46:36.911Z",
+    "updatedAt": "2025-04-13T13:46:36.911Z",
+    "__v": 0
+},
+{
+  "_id": "67fbc057af81fd9bd0ef93fb",
+  "title": "Backend Domination - Create Scalable & Secured Backend.",
+  "price": 3999,
+  "description": "Ready to rule the digital world? Learn to build powerful back-ends that drive websites and apps smoothly. From databases to security, we cover it all.",
+  "imageURL": "https://ik.imagekit.io/sheryians/courses_gif/undefined-backend_0.5x_Medium_wgHDU-5rPt.png",
+  "CourseLink": "https://www.sheryians.com/courses/courses-details/Back-End%20Domination:%20Create%20Efficient%20Back-End.",
+  "tag": "Web Development",
+  "typeOfCourse": "PAID",
+  "CourseLevel": "Beginner",
+  "createdAt": "2025-04-13T13:47:03.959Z",
+  "updatedAt": "2025-04-13T13:47:03.959Z",
+  "__v": 0
+},
   
-  {
-    "title" : "Java & DSA Domination : Crack MAANG Companies.",
-    "price": "4999",
-    "description": "Ace your coding interviews! Master Java and DSA with our expert-led course, packed with interactive lessons and practice tests.",
-    "CourseLink": "https://www.sheryians.com/courses/courses-details/Java%20&%20DSA%20Domination",
-    "imageURL": "https://ik.imagekit.io/sheryians/java&dsa/javaas%20Large_jY0Wighav.jpeg",
-    "tag": "Java",  
-    "typeOfCourse":"PAID",
-    "CourseLevel":"Beginner"
-  },
+{
+  "_id": "67fbc064af81fd9bd0ef93fd",
+  "title": "Java & DSA Domination : Crack MAANG Companies.",
+  "price": 4999,
+  "description": "Ace your coding interviews! Master Java and DSA with our expert-led course, packed with interactive lessons and practice tests.",
+  "imageURL": "https://ik.imagekit.io/sheryians/java&dsa/javaas%20Large_jY0Wighav.jpeg",
+  "CourseLink": "https://www.sheryians.com/courses/courses-details/Java%20&%20DSA%20Domination",
+  "tag": "Java",
+  "typeOfCourse": "PAID",
+  "CourseLevel": "Beginner",
+  "createdAt": "2025-04-13T13:47:16.215Z",
+  "updatedAt": "2025-04-13T13:47:16.215Z",
+  "__v": 0
+},
   
-  {
-    "title" : "Job Ready AI Powered Cohort: Complete Web Development + DSA + Aptitude",
-    "price": "5999",
-    "description": "MERN Stack, A Placement Focus, DSA With JS, Aptitude Focus, Ai Powered",
-    "CourseLink": "https://www.sheryians.com/courses/courses-details/Java%20&%20DSA%20Domination",
-    "imageURL": "https://ik.imagekit.io/sheryians/Job%20Ready%20Live%20Batch/IMG_5100_G2afyBQKH.JPG?updatedAt=1735827470404",
-    "tag": "Web Development",  
-    "typeOfCourse":"PAID",
-    "CourseLevel":"Beginner"
-  }
+{
+  "_id": "67fbc06eaf81fd9bd0ef93ff",
+  "title": "Job Ready AI Powered Cohort: Complete Web Development + DSA + Aptitude",
+  "price": 5999,
+  "description": "MERN Stack, A Placement Focus, DSA With JS, Aptitude Focus, Ai Powered",
+  "imageURL": "https://ik.imagekit.io/sheryians/Job%20Ready%20Live%20Batch/IMG_5100_G2afyBQKH.JPG?updatedAt=1735827470404",
+  "CourseLink": "https://www.sheryians.com/courses/courses-details/Java%20&%20DSA%20Domination",
+  "tag": "Web Development",
+  "typeOfCourse": "PAID",
+  "CourseLevel": "Beginner",
+  "createdAt": "2025-04-13T13:47:26.762Z",
+  "updatedAt": "2025-04-13T14:11:10.257Z",
+  "__v": 0
+}
 ]
 export default function PopularCourse() {
   // const [popCourse,setPopCourse]=useState([]);
