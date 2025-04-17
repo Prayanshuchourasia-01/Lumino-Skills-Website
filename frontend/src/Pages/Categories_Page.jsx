@@ -27,7 +27,7 @@ const Categories_Page = () => {
       <Navbar/>
       {/* <FilterCourse/> */}
       <Categories_Display/>
-
+      <h2 className='text-center text-3xl font-mono font-bold p-4'>All Courses Categories</h2>
  <div className="h-fit justify-items-center  bg-slate-300 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
        
         {AllCourses.map((course) => {
