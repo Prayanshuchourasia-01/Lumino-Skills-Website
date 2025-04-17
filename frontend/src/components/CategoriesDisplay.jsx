@@ -16,6 +16,7 @@ const Caegories_Display = () => {
             <p>Python, Web Development, C++, Java, C, Cloud Computing, Android Dev, Blockchain.</p>
           </div>
         </div>
+       
       </div>
     </div>
   );
