@@ -16,7 +16,7 @@ function Footer() {
           </p>
         </div>
         <button className="bg-black text-white px-[4em] py-3 rounded-full font-semibold hover:bg-gray-800" >
-          Contact Us.
+          <Link to={'/contact'}>Contact Us.</Link>
         </button>
       </div>
 
